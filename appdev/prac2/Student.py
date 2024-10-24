@@ -23,6 +23,6 @@ class student(p):
         return self.__exam_mark
     
     def compute_final_mark(self):
-        self.__final_mark =  (self.__test_mark + self.__exam_mark)/2
+        self.__final_mark =  (self.get_test_mark() + self.get_exam_mark())/2
     def __str__(self):
-        return f'{self.__name}, Admin no:{self.__admin_no} final mark is {self.__final_mark} '
+        return f'{self.get_name()}, Admin no:{self.__admin_no} final mark is {self.__final_mark} '
