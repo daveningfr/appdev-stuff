@@ -9,7 +9,7 @@ while lecnric != lecstaffid:
     lecstaffid = input("Enter lecturer staff id: ")
 
         
-lechours = int(input("Enter total teaching hours: "))
+lechours = int(input("Enter total teaching hours:4 "))
 lec = l.lecturer(lecname, lecnric, lecstaffid)
 lec.compute_salary(lechours)
 
