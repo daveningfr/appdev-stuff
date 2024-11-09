@@ -12,10 +12,10 @@ class student(person):
     def get_student_id(self):
         return self.__student_id
     
-    def __str__(self):
-        return f"name:{self.get_name()} age:{self.get_age()} student_id:{self.get_student_id()}"
+    def __str__(self): 
+        return f"name:{self.get_name()} age:{self.get_age()} student_id:{self.get_student_id()}" #this will return the string when the object is called
     
 
-sigma = student("sigma", 20, 1234)#create a student object with varible name sigma
-sigma.set_name(input("Enter new name: "))#set the name of the student object of sigma
-print(sigma)
+sigma = student("sigma", 20, 1234)#create a student object with name sigma
+sigma.set_name(input("Enter new name: "))#set the name of the student object of sigma using the input function
+print(sigma)#this prints the student object sigma which uses the __str__ method to print the object
