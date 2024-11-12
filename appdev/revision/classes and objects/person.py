@@ -4,7 +4,7 @@ class person:
         self.__name = name
         self.__age = age
 
-    def set_name(self, name): 
+    def set_name(self, name): #this sets the varible name
         self.__name = name
     
     def get_name(self):
