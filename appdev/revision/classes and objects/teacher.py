@@ -1,4 +1,4 @@
-import person #import the person class from person.py
+from person import person #import the person class from person.py
 
 #create a teacher class which inherits from person
 class teacher(person):
@@ -14,3 +14,8 @@ class teacher(person):
     
     def __str__(self):
         return f"name:{self.get_name()} age:{self.get_age()} teacher_id:{self.get_teacher_id()}"
+    
+
+
+sigma = teacher("sigma", 20, 1234)#create a teacher object with name sigma
+print(sigma)#this prints the teacher object sigma which uses the __str__ method to print the object

@@ -1,4 +1,4 @@
-import person #import the person class from person.py
+from person import person #import the person class from person.py
 
 #create a student class which inherits from person
 class student(person):

@@ -2,6 +2,7 @@ try:
     error = input('what error you want to raise? choose from value, zero, io or unknown: ')
     if error == 'value':
         sigma = int('fein')
+        j =1/0
     elif error == 'zero':
         dweah = 1/0
     elif error == 'io':
