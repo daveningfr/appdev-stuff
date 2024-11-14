@@ -21,7 +21,7 @@ def menu():
             break
 
 def add():
-    file = open("question.txt", "a")
+    file = open("appdev/revision/q3/question.txt", "a")
     new_id = input("Enter the question id: ")
     new_description = input("Enter the question description: ")
     new_answer = input("Enter the question answer: ")
@@ -37,7 +37,7 @@ def add():
     
 
 def display():
-    file = open("question.txt", "r")
+    file = open("appdev/revision/q3/question.txt", "r")
     line = file.readline()
     try:
         ques = input("Enter the id of the question you want to display: ")

@@ -43,7 +43,7 @@ def display():
         print("Question not found")
 
 try:
-    db = shelve.open("question")
+    db = shelve.open("appdev/revision/q3/question")
 except IOError:
     print("Error: File not found")
 else:
