@@ -30,7 +30,7 @@ def add():
     newq.set_id(new_id)
     newq.set_description(new_description)
     newq.set_answer(new_answer)
-    file.write(f"{newq.get_id()} {newq.get_description()} {newq.get_answer()}\n")
+    file.write(f"{newq.get_id()},{newq.get_description()},{newq.get_answer()}\n")
 
     file.close()
     
@@ -45,9 +45,9 @@ def display():
             if line == "":
                 print("Question not found")
                 break
-            elif line.split()[0] == ques:
-                print("The question is: ", line.split()[1])
-                print("The answer is: ", line.split()[2])
+            elif line.split(',')[0] == ques:
+                print("The question is: ", line.split(',')[1])
+                print("The answer is: ", line.split(',')[2])
                 break
             else:
                 line = file.readline()

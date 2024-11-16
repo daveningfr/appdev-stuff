@@ -1,1 +1,1 @@
-100 sigma sigma
+100,sigma,sigma
