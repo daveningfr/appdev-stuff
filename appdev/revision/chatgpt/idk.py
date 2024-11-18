@@ -1,8 +1,8 @@
 class person:
-    def __init__(self,name,age,gender):
-        self.__name = name
-        self/__age = age
-        self.__gender = gender
+    def __init__(self):
+        self.__name = None
+        self.__age = None
+        self.__gender = None
     
     def set_name(self,name):
         self.__name = name
