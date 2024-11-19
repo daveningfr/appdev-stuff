@@ -37,21 +37,21 @@ def add():
     
 
 def display():
-    file = open("appdev/revision/q3/question.txt", "r")
-    line = file.readline()
     try:
-        ques = input("Enter the id of the question you want to display: ")
+        file = open("appdev/revision/q3/question.txt", "r")
+        ques = input("Enter the ID of the question you want to display: ")
         while True:
+            line = file.readline()
             if line == "":
                 print("Question not found")
                 break
             elif line.split(',')[0] == ques:
-                print("The question is: ", line.split(',')[1])
-                print("The answer is: ", line.split(',')[2])
+                print("The question is:", line.split(',')[1])
+                print("The answer is:", line.split(',')[2])
                 break
-            else:
-                line = file.readline()
     except IOError:
-        print("Question not found")
+        print("File not found")
+    finally:
+        file.close()  
 
 menu()
